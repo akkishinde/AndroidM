@@ -22,11 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCamera;
     private TextView txtNext;
 
-    /**
-     * Permissions required to read and write contacts.
-     */
-    private static String[] PERMISSIONS_CONTACT = {Manifest.permission.READ_CONTACTS,
-            Manifest.permission.WRITE_CONTACTS};
+
 
     public void showCamera(View view) {
         Log.i(TAG, "Show camera button pressed. Checking permission.");

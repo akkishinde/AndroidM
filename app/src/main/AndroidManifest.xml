@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.leftshift.androidm" >
 
-    <!-- <uses-permission android:name="ANDROID.PERMISSION.READ_CONTACTS"/> -->
-    <uses-permission-sdk-m android:name="android.permission.READ_CONTACTS" />
+    <!-- If you add permissions like this, it will prevent the specific permission below M-->
+    <!-- <uses-permission-sdk-m android:name="ANDROID.PERMISSION.READ_CONTACTS"/> -->
 
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application

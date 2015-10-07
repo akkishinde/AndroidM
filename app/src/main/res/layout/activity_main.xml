@@ -45,6 +45,7 @@
         android:id="@+id/txtNext"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/txtDescription"
-        android:layout_alignEnd="@+id/txtDescription" />
+        android:layout_alignEnd="@+id/txtDescription"
+        android:textColor="#757575"/>
 
 </RelativeLayout>
