@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidM</string>
+    <string name="action_settings">Setting</string>
+    <string name="permission_camera_rationale">Camera permission needed to show camera preview</string>
+    <string name="ok">OK</string>
+    <string name="txtCameraDescription">This sample shows runtime permissions available in Android 6.0 (API level 23) and higher. The app displays an additional option to access contacts using an 6.0-only optional permission.</string>
+    <string name="txtCameraTitle">Runtime Permissions</string>
+    <string name="txtOpenCamera">Open Camera</string>
+</resources>
