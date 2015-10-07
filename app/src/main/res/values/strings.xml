@@ -6,4 +6,9 @@
     <string name="txtCameraDescription">This sample shows runtime permissions available in Android 6.0 (API level 23) and higher. The app displays an additional option to access contacts using an 6.0-only optional permission.</string>
     <string name="txtCameraTitle">Runtime Permissions</string>
     <string name="txtOpenCamera">Open Camera</string>
+    <string name="txtNext">Next</string>
+    <string name="txtNotificationTitle">Marshmallow Notification</string>
+    <string name="txtNotificationDescription">The NotificationManager can tell you how many notifications your application is currently showing. This sample demonstrates how to use this API that has been introduced with Android M. To get started, press the \"add a notification\" button. When a notification is being canceled, the count gets updated via a PendingIntent.</string>
+    <string name="txtAddNotification">Add Notification</string>
+    <string name="active_notifications">0</string>
 </resources>

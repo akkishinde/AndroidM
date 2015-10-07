@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.leftshift.androidm" >
-    <!--<uses-permission android:name="ANDROID.PERMISSION.READ_CONTACTS"/>-->
+
+    <!-- <uses-permission android:name="ANDROID.PERMISSION.READ_CONTACTS"/> -->
     <uses-permission-sdk-m android:name="android.permission.READ_CONTACTS" />
+
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +20,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".NotificationActivity" >
         </activity>
     </application>
 

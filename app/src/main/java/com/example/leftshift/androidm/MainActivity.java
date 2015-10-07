@@ -1,6 +1,7 @@
 package com.example.leftshift.androidm;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CAMERA = 0;
     private View mLayout;
     private Button btnCamera;
+    private TextView txtNext;
 
     /**
      * Permissions required to read and write contacts.
@@ -115,12 +118,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mLayout=findViewById(R.id.main);
         btnCamera=(Button)findViewById(R.id.button);
+        txtNext=(TextView)findViewById(R.id.txtNext);
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showCamera(mLayout);
             }
         });
+        txtNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
