@@ -11,4 +11,8 @@
     <string name="txtNotificationDescription">The NotificationManager can tell you how many notifications your application is currently showing. This sample demonstrates how to use this API that has been introduced with Android M. To get started, press the \"add a notification\" button. When a notification is being canceled, the count gets updated via a PendingIntent.</string>
     <string name="txtAddNotification">Add Notification</string>
     <string name="active_notifications">0</string>
+    <string name="to">To:</string>
+    <string name="body">Body:</string>
+    <string name="hint_body">Edit your message:</string>
+    <string name="send">Send</string>
 </resources>
