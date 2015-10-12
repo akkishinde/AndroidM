@@ -24,6 +24,8 @@ public class NotificationActivity extends AppCompatActivity {
     private NotificationManager mNotificationManager;
     private TextView txtNotificationCount;
     private Button btnAddNotification;
+    private TextView txtNext;
+
 
     // Every notification needs a unique ID otherwise the previous one would be overwritten.
     private int mNotificationId = 0;
@@ -40,6 +42,7 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
         btnAddNotification=(Button)findViewById(R.id.button);
+        txtNext=(TextView)findViewById(R.id.txtNext);
         mNotificationManager = (NotificationManager) getApplication().getSystemService(
                 Context.NOTIFICATION_SERVICE);
         txtNotificationCount = (TextView)findViewById(R.id.txtNotificationCount);
@@ -55,8 +58,17 @@ public class NotificationActivity extends AppCompatActivity {
                 2323 /* requestCode */, deleteIntent, 0);
         updateNumberOfNotifications();
 
+        txtNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NotificationActivity.this, DirectShareActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void addNotificationAndReadNumber() {
         // [BEGIN create_notification]
         // Create a Notification and notify the system.
@@ -66,6 +78,7 @@ public class NotificationActivity extends AppCompatActivity {
                 .setContentText("This is a sample Notification")
                 .setAutoCancel(true)
                 .setDeleteIntent(mDeletePendingIntent);
+
 
         final Notification notification = builder.build();
         mNotificationManager.notify(++mNotificationId, notification);

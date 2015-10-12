@@ -11,4 +11,17 @@
     <string name="txtNotificationDescription">The NotificationManager can tell you how many notifications your application is currently showing. This sample demonstrates how to use this API that has been introduced with Android M. To get started, press the \"add a notification\" button. When a notification is being canceled, the count gets updated via a PendingIntent.</string>
     <string name="txtAddNotification">Add Notification</string>
     <string name="active_notifications">0</string>
+
+    <string name="to">To:</string>
+    <string name="body">Body:</string>
+    <string name="hint_body">Edit your message:</string>
+    <string name="send">Send</string>
+    <string name="sending_message">Sending a  message...</string>
+    <string name="message_sent">sent a message</string>
+    <string name="send_intent_title">send message via:</string>
+    <string name="share">Share</string>
+    <string name="text_to_share">Text to Share</string>
+    <string name="hello">Hello</string>
+    <string name="explanation">This app demonstrates how to implement Direct Share. Use some other app and share a text.         For your convenience, you can also use the input below to share the text.</string>
+
 </resources>
