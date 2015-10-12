@@ -56,6 +56,7 @@ public class NotificationActivity extends AppCompatActivity {
         Intent deleteIntent = new Intent(NotificationActivity.ACTION_NOTIFICATION_DELETE);
         mDeletePendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
                 2323 /* requestCode */, deleteIntent, 0);
+
         updateNumberOfNotifications();
 
         txtNext.setOnClickListener(new View.OnClickListener() {

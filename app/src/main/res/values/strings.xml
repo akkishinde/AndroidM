@@ -23,5 +23,7 @@
     <string name="text_to_share">Text to Share</string>
     <string name="hello">Hello</string>
     <string name="explanation">This app demonstrates how to implement Direct Share. Use some other app and share a text.         For your convenience, you can also use the input below to share the text.</string>
+    <string name="txtDirectShareTitle">Marshmallow Direct Share</string>
+    <string name="txtShare">Share</string>
 
 </resources>
