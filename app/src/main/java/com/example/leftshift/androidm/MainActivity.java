@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             // Camera permissions is already available, show the camera preview.
-          /*  Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-            startActivity(intent);*/
+            Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+            startActivity(intent);
             Toast.makeText(MainActivity.this, "Showing Camera Preview", Toast.LENGTH_SHORT).show();
             Log.i(TAG,
                     "CAMERA permission has already been granted. Displaying camera preview.");

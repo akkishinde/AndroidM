@@ -3,9 +3,11 @@
     package="com.example.leftshift.androidm" >
 
     <!-- If you add permissions like this, it will prevent the specific permission below M-->
-    <!-- <uses-permission-sdk-m android:name="ANDROID.PERMISSION.READ_CONTACTS"/> -->
+     <uses-permission-sdk-m android:name="android.permission.CAMERA"/>
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->mj
+
+
 
     <application
         android:allowBackup="true"
